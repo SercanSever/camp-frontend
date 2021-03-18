@@ -15,6 +15,7 @@ export class ProductComponent implements OnInit {
   constructor(private productService: ProductService,
     private activatedRoute: ActivatedRoute) { }
 
+
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       if (params["categoryId"]) {
@@ -31,7 +32,6 @@ export class ProductComponent implements OnInit {
       this.dataLoaded = true;
     })
   }
-
 
   getProductsByCategory(categoryId: number) {
     this.productService.getProductsByCategory(categoryId).subscribe(response => {
