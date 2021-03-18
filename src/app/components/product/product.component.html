@@ -2,6 +2,15 @@
   <span class="visually-hidden">Loading...</span>
 </div>
 
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Ürün Ara :</label>
+  <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="Bir ürün adı girin..">
+</div>
+
+<div class="alert alert-primary">
+{{filterText}} aradınız..
+</div>
+
 <table *ngIf="dataLoaded==true" class="table table-striped table-hover">
   <thead>
     <tr>
