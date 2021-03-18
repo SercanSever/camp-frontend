@@ -6,18 +6,20 @@
   <thead>
     <tr>
       <th>Id</th>
-      <th>Name</th>
-      <th>CategoryId</th>
-      <th>Price</th>
-      <th>Stock</th>
+      <th>Ürün Adı</th>
+      <th>Kategori</th>
+      <th>Fiyat</th>
+      <th>Kdv'li Fiyat</th>
+      <th>Stok Adedi</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let product of products">
       <td>{{ product.productId }}</td>
-      <td>{{ product.productName }}</td>
+      <td>{{ product.productName | uppercase}}</td>
       <td>{{ product.categoryId }}</td>
       <td>{{ product.unitPrice }}</td>
+      <td>{{ product.unitPrice | vatAdded:18 | currency}}</td>
       <td>{{ product.unitsInStock }}</td>
     </tr>
   </tbody>
