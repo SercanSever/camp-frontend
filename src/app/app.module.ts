@@ -12,6 +12,7 @@ import { NaviComponent } from './components/navi/navi.component';
 import { VatAddedPipe } from './pipes/vatAdded.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ToastrModule } from 'ngx-toastr';
+import { CartSummaryComponent } from './components/cart-summary/cart-summary.component';
 
 
 
@@ -24,7 +25,8 @@ import { ToastrModule } from 'ngx-toastr';
     CategoryComponent,
     NaviComponent,
     VatAddedPipe,
-    FilterPipe
+    FilterPipe,
+    CartSummaryComponent
 
 
   ],
