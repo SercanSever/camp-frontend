@@ -7,7 +7,7 @@ import { CartItem } from 'src/app/models/cartItem';
   styleUrls: ['./cart-summary.component.css']
 })
 export class CartSummaryComponent implements OnInit {
-  cartItems: CartItem[] = [];
+  cartItems: CartItem[];
 
   constructor() { }
 
