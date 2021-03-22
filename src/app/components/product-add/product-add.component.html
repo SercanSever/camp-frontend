@@ -1,1 +1,32 @@
-<p>product-add works!</p>
+<div class="content">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Ürün Ekle</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="productAddForm">
+                    <label for="productName">Adı</label>
+                    <div class="form-group p-sm-3">
+                        <input class="form-control" type="text" id="productName" formControlName="productName" placeholder="Ürün adı.."/>
+                    </div>
+                    <label for="categoryId">Kategori</label>
+                    <div class="form-group p-sm-3">
+                        <input class="form-control" type="number" id="categoryId" formControlName="categoryId" placeholder="Kategori.."/>
+                    </div>
+                    <label for="unitPrice">Birim Fiyatı</label>
+                    <div class="form-group p-sm-3">
+                        <input class="form-control" type="number" id="unitPrice" formControlName="unitPrice" placeholder="Fiyatı.."/>
+                    </div>
+                    <label for="unitsInStock">Stok Adedi</label>
+                    <div class="form-group p-sm-3">
+                        <input class="form-control" type="number" id="unitsInStock" formControlName="unitsInStock" placeholder="Stock adedi.."/>
+                    </div>
+                </form>  
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+            </div>
+        </div>
+    </div>
+</div>
